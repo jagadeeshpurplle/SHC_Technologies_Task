@@ -9,8 +9,6 @@
           <include name="before"/>
           <include name="after_method"/>
           <include name="tearDown"/>
-          <include name="user_skills"/>
-          <include name="applyJobWithSkillMatch"/>
         </methods>
       </class> <!-- test_scenarios.SearchJobsAndApply -->
     </classes>

@@ -33,7 +33,7 @@ public class Common_methods {
 	static Properties prop = new Properties();
 	
 
-	public static void waitForPageLoaded(WebDriver driver) {
+	public static void waitForPageLoaded(WebDriver driver) { //function to wait till page loads completely 
         ExpectedCondition<Boolean> expectation = new
                 ExpectedCondition<Boolean>() {
                     public Boolean apply(WebDriver driver) {
@@ -51,7 +51,6 @@ public class Common_methods {
 	
 	public static ArrayList<String> readDataFromFile(String path) throws FileNotFoundException {
 		File file = new File(path);
-//		Files.readAllBytes(System.getProperty("user.dir")+"/result_data/statusOfNewBanners.txt");
 		ArrayList<String> values = new ArrayList<String>();
 		Scanner sc = new Scanner(file);
 		while(sc.hasNextLine()){
@@ -62,7 +61,7 @@ public class Common_methods {
 	
 
     //get sql connection
-    public static Connection getSqlConnection() throws ClassNotFoundException {
+    public static Connection getSqlConnection() throws ClassNotFoundException { //making connection with sql DB and return connection
     	Connection connn = null;
     	try { 
 			
@@ -79,15 +78,15 @@ public class Common_methods {
 		return connn;
     }
     
-    public static ResultSet execute_Query(Connection connn,String query) throws SQLException {
+    public static ResultSet execute_Query(Connection connn,String query) throws SQLException { //return result set
     	    	
-		Statement st = connn.createStatement();
+		Statement st = connn.createStatement(); 
 		
 		ResultSet rs=st.executeQuery(query);
 		
 		return rs;
     }
-    public static int execute(Connection connn,String query) throws SQLException {
+    public static int execute(Connection connn,String query) throws SQLException { // to execute statement
     	
 		Statement st = connn.createStatement();
 		
@@ -100,17 +99,17 @@ public class Common_methods {
 	public static void insertIntoDB(Connection con,int s, String company, String skill, int pos) throws ClassNotFoundException, SQLException, IOException {
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/envProperties/env.properties");
 		prop.load(fis); 
-		PreparedStatement preparedStmt = con.prepareStatement(prop.getProperty("query_to_insert_jobs_data"));
+		PreparedStatement preparedStmt = con.prepareStatement(prop.getProperty("query_to_insert_jobs_data")); // query to insert data to DB with prepare statement
 		preparedStmt.setInt (1, s);
 		preparedStmt.setString (2, company);
 		preparedStmt.setString (3, skill);
 		preparedStmt.setInt(4, pos);
 
 		// execute the preparedstatement
-		preparedStmt.executeUpdate();
+		preparedStmt.executeUpdate(); //executing query to insert data to DB
 	}
 	
-	public static String capture(WebDriver driver, String screenshotName) throws IOException {
+	public static String capture(WebDriver driver, String screenshotName) throws IOException { //to capture screenshot
 		
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
@@ -121,7 +120,7 @@ public class Common_methods {
 		
 	}
 	
-	public static String fileName() {
+	public static String fileName() { // generating file with current time
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-YYYY_hh:mm:ss");
 		Date date= new Date();
@@ -130,7 +129,7 @@ public class Common_methods {
 		
 	}
 	
-	public static void printLine() {
+	public static void printLine() { 
 		System.out.println("----------------------------------------------");
 	}
 	
