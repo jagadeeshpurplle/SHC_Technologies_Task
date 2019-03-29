@@ -13,5 +13,18 @@ PreRequisites that i used:
 							`Angel_jobs.java`     : This java file contains the required elements of `JOBS` page, hence to use across the project
 							`Angel_profile_page`  : This java file contains the required elements of `PROFILE` page, hence to use across the project
 	`test_scenarios`	: This package holds the test scenarios, containing one class named `SearchJobsAndApply.java`
-							`SearchJobsAndApply.java` : This is our main scenario file, we have to run this file via `TestNG`
-	 
+							`SearchJobsAndApply.java` : This is our main scenario file which containing 3 test cases names "user_skills", "searchJobsStoreInDB" and "applyJobWithSkillMatch", we have to run this file via `TestNG`
+	 `user_skills` method takes skills that user having
+	 `searchJobsStoreInDB` method search jobs with provided keywords and store data to DB
+	 `applyJobWithSkillMatch` method takes data from DB and on required percentage match of skills, job will get applied.
+3) `envProperties` folder : This folder having env.properties containing input data that used over the project
+4) `inputs` : this folder having the file `input_keywords_search.txt` containing predefined search keywords
+5) `screenshots` : Whenever failure comes a screenshot will be taken and stores here
+
+
+How to run?
+way 1:  Open `SearchJobsAndApply.java` class and run as testNG
+way 2:  Right click on project and run as TestNG
+
+Reports: 
+1. After completion of running script, a decent report will be generated and stored in 	`SHC_Technologies_Task/test-output/STMExtentReport.html`. Open this file to see the HTML report.

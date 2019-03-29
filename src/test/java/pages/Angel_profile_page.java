@@ -23,8 +23,7 @@ public class Angel_profile_page {
 
 	}
 	
-	//div[@class='s-grid']//div[3]//span
-	
+
 	
 
 	

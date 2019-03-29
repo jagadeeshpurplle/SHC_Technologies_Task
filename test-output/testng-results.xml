@@ -2,61 +2,61 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="90893" started-at="2019-03-28T10:59:44Z" finished-at="2019-03-28T11:01:15Z">
+  <suite name="Default suite" duration-ms="112646" started-at="2019-03-28T15:58:43Z" finished-at="2019-03-28T16:00:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="90893" started-at="2019-03-28T10:59:44Z" finished-at="2019-03-28T11:01:15Z">
+    <test name="Default test" duration-ms="112646" started-at="2019-03-28T15:58:43Z" finished-at="2019-03-28T16:00:35Z">
       <class name="test_scenarios.SearchJobsAndApply">
-        <test-method status="PASS" signature="before()[pri:0, instance:test_scenarios.SearchJobsAndApply@4a87761d]" name="before" is-config="true" duration-ms="1901" started-at="2019-03-28T10:59:44Z" finished-at="2019-03-28T10:59:46Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:test_scenarios.SearchJobsAndApply@6a1aab78]" name="before" is-config="true" duration-ms="1837" started-at="2019-03-28T15:58:43Z" finished-at="2019-03-28T15:58:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="user_skills()[pri:1, instance:test_scenarios.SearchJobsAndApply@4a87761d]" name="user_skills" duration-ms="16234" started-at="2019-03-28T10:59:46Z" finished-at="2019-03-28T11:00:02Z">
+        <test-method status="PASS" signature="user_skills()[pri:1, instance:test_scenarios.SearchJobsAndApply@6a1aab78]" name="user_skills" duration-ms="20545" started-at="2019-03-28T15:58:45Z" finished-at="2019-03-28T15:59:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_skills -->
-        <test-method status="PASS" signature="after_method(org.testng.ITestResult)[pri:0, instance:test_scenarios.SearchJobsAndApply@4a87761d]" name="after_method" is-config="true" duration-ms="3" started-at="2019-03-28T11:00:02Z" finished-at="2019-03-28T11:00:02Z">
+        <test-method status="PASS" signature="after_method(org.testng.ITestResult)[pri:0, instance:test_scenarios.SearchJobsAndApply@6a1aab78]" name="after_method" is-config="true" duration-ms="3" started-at="2019-03-28T15:59:05Z" finished-at="2019-03-28T15:59:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=user_skills status=SUCCESS method=SearchJobsAndApply.user_skills()[pri:1, instance:test_scenarios.SearchJobsAndApply@4a87761d] output={null}]]]>
+                <![CDATA[[TestResult name=user_skills status=SUCCESS method=SearchJobsAndApply.user_skills()[pri:1, instance:test_scenarios.SearchJobsAndApply@6a1aab78] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after_method -->
-        <test-method status="PASS" signature="searchJobsStoreInDB()[pri:2, instance:test_scenarios.SearchJobsAndApply@4a87761d]" name="searchJobsStoreInDB" duration-ms="57483" started-at="2019-03-28T11:00:02Z" finished-at="2019-03-28T11:00:59Z">
+        <test-method status="PASS" signature="searchJobsStoreInDB()[pri:2, instance:test_scenarios.SearchJobsAndApply@6a1aab78]" name="searchJobsStoreInDB" duration-ms="51886" started-at="2019-03-28T15:59:05Z" finished-at="2019-03-28T15:59:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchJobsStoreInDB -->
-        <test-method status="PASS" signature="after_method(org.testng.ITestResult)[pri:0, instance:test_scenarios.SearchJobsAndApply@4a87761d]" name="after_method" is-config="true" duration-ms="0" started-at="2019-03-28T11:00:59Z" finished-at="2019-03-28T11:00:59Z">
+        <test-method status="PASS" signature="after_method(org.testng.ITestResult)[pri:0, instance:test_scenarios.SearchJobsAndApply@6a1aab78]" name="after_method" is-config="true" duration-ms="0" started-at="2019-03-28T15:59:57Z" finished-at="2019-03-28T15:59:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchJobsStoreInDB status=SUCCESS method=SearchJobsAndApply.searchJobsStoreInDB()[pri:2, instance:test_scenarios.SearchJobsAndApply@4a87761d] output={null}]]]>
+                <![CDATA[[TestResult name=searchJobsStoreInDB status=SUCCESS method=SearchJobsAndApply.searchJobsStoreInDB()[pri:2, instance:test_scenarios.SearchJobsAndApply@6a1aab78] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after_method -->
-        <test-method status="PASS" signature="applyJobWithSkillMatch()[pri:3, instance:test_scenarios.SearchJobsAndApply@4a87761d]" name="applyJobWithSkillMatch" duration-ms="14617" started-at="2019-03-28T11:00:59Z" finished-at="2019-03-28T11:01:14Z">
+        <test-method status="PASS" signature="applyJobWithSkillMatch()[pri:3, instance:test_scenarios.SearchJobsAndApply@6a1aab78]" name="applyJobWithSkillMatch" duration-ms="37939" started-at="2019-03-28T15:59:57Z" finished-at="2019-03-28T16:00:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applyJobWithSkillMatch -->
-        <test-method status="PASS" signature="after_method(org.testng.ITestResult)[pri:0, instance:test_scenarios.SearchJobsAndApply@4a87761d]" name="after_method" is-config="true" duration-ms="1" started-at="2019-03-28T11:01:14Z" finished-at="2019-03-28T11:01:14Z">
+        <test-method status="PASS" signature="after_method(org.testng.ITestResult)[pri:0, instance:test_scenarios.SearchJobsAndApply@6a1aab78]" name="after_method" is-config="true" duration-ms="0" started-at="2019-03-28T16:00:35Z" finished-at="2019-03-28T16:00:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=applyJobWithSkillMatch status=SUCCESS method=SearchJobsAndApply.applyJobWithSkillMatch()[pri:3, instance:test_scenarios.SearchJobsAndApply@4a87761d] output={null}]]]>
+                <![CDATA[[TestResult name=applyJobWithSkillMatch status=SUCCESS method=SearchJobsAndApply.applyJobWithSkillMatch()[pri:3, instance:test_scenarios.SearchJobsAndApply@6a1aab78] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after_method -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test_scenarios.SearchJobsAndApply@4a87761d]" name="tearDown" is-config="true" duration-ms="630" started-at="2019-03-28T11:01:14Z" finished-at="2019-03-28T11:01:15Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test_scenarios.SearchJobsAndApply@6a1aab78]" name="tearDown" is-config="true" duration-ms="403" started-at="2019-03-28T16:00:35Z" finished-at="2019-03-28T16:00:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -29,6 +29,12 @@ public class Angel_Jobs {
 		return element;
 	}
 	
+	public static WebElement aceeptCookie(WebDriver driver) {
+		
+		element = driver.findElement(By.xpath("//div[@class='c-button c-button--blue js-accept']"));
+		
+		return element;
+	}
 	public static WebElement user_pass(WebDriver driver) {
 		
 		element = driver.findElement(By.id("user_password"));
@@ -164,6 +170,30 @@ public class Angel_Jobs {
 		
 		return element;
 	}
+	
+	
+	
+	public static WebElement successMessage(WebDriver driver) {
+		
+		element = driver.findElement(By.xpath("//div[@class='success-message']"));
+		
+		return element;
+	}
+	
+	public static String successMessageWait(WebDriver driver) {
+		
+		return "//div[@class='success-message']";
+		
+	}
+	public static WebElement undoApplication(WebDriver driver) {
+		
+		element = driver.findElement(By.xpath("//button[@class='c-button c-button--gray']"));
+		
+		return element;
+	}
+	
+	
+	
 	
 	public static WebElement noteToRecruiter(WebDriver driver) {
 		
